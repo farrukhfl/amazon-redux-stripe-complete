@@ -9,7 +9,7 @@ const SearchPage = () => {
   const { filterData, getFilteredData } = useSupabase();
   useEffect(() => {
     getFilteredData(query.toString());
-  }, []);
+  }, [query, getFilteredData]);
   
   return (
     <div>
